@@ -1,0 +1,37 @@
+$iron: #CCCCCC
+$black: #000000
+$black-light: #151515
+$black-light-2: #464646
+$black-lighter: #262626
+$grey-light-2: #cfcfcf
+$blue: #74bdd7
+$green: #6fbe6a
+$grey: #ebebeb
+$grey-border-menu: #d5d5d5
+$grey-very-dark: #424242
+$grey-dark: #a8a8a8
+$grey-neutral: #999999
+$grey-disabled: #f7f7f7
+$grey-light: #7b7b7b
+$red: #c70031
+$grey-semi-translucent: rgba(225, 225, 225, 0.85)
+$grey-translucent: rgba(21, 21, 21, .05)
+$white: #FFFFFF
+$white-translucent: rgba(255, 255, 255, .9)
+$white-smoke: #F5F5F5
+$snow: #F9F9F9
+$yellow: #fff662
+$yellow-fluo: #ffff53
+$pink: #ff1cfc
+$green: #94a92b
+$green-success: #609913
+$old-pink: #d8cbce
+$fb: #3c599b
+$gplus: #c33a2b
+$tw: #52a8ea
+$insta: #426f93
+$pin: #e71311
+$bobler: #f3ca3b
+$tumblr: #2d4761
+$yt: #ec2027
+$placeholder: #9f9f9f

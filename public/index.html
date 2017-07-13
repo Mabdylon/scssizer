@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <title>scssizer</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Scssizer</h1>
+    </head>
+
+    <section class="content">
+
+        <div class="input-css block-24 margin-offset-2">
+            <label class="label-block" for="cssContent">Css in :</label>
+            <textarea class="textarea-in textarea-block" id="css-input" placeholder="Put your CSS to transform here ..."></textarea>
+        </div>
+
+        <div class="convert-block">
+            <button id="button-transform">Process</button>
+        </div>
+
+        <div class="output-scss block-24 margin-offset-2">
+            <label class="label-block" for="scssResult">SCSS out :</label>
+            <textarea class="textarea-out textarea-block" id="scss-result" placeholder="See the result here ..."></textarea>
+        </div>
+
+    </section>
+
+    <footer>
+        <section class="example-section">
+            <p>Example input CSS :
+                <pre class="pre-example">
+.super-class {
+    color: #ebebeb;
+}</pre>
+            </p>
+        </section>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>

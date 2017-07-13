@@ -1,0 +1,31 @@
+{
+  "name": "scssizer",
+  "version": "0.0.1",
+  "description": "Take an output and input path, load scss variables, and replace known value in css",
+  "main": "index.js",
+  "dependencies": {
+    "css-tree": "^1.0.0-alpha19",
+    "csscomb": "^4.2.0",
+    "foundation": "^4.2.1-1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "main": "node --harmony index.js",
+    "scssizer": "node --harmony index.js",
+    "scssizer-file": "node --harmony index.js /path/to/transform",
+    "scssizer-server": "nodemon --harmony index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css2scss",
+    "css",
+    "scss",
+    "transform"
+  ],
+  "author": "Mabdylon",
+  "license": "ISC"
+}
