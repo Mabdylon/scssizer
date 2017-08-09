@@ -1,16 +1,15 @@
-const fs = require('fs');
-const path = require('path')
+const recursive = require("recursive-readdir");
+const fs = require("fs");
 
-function pathInTransformPathOut(pathIn, transform) {
+function pathInTransformPathOut(workingDir, transform, excludedExpression) {
+    recursive(workingDir).then(function(files) {
+        files.forEach((file) => {
+            transformContent(file, transform)
+                .then((transformedContent) => {
+                    writeFile(transformedContent, file)
+                });
 
-    var files = fs.readdirSync(pathIn);
-    files.forEach((file) => {
-        var absFileName = path.join(pathIn, file);
-        transformContent(absFileName, transform)
-            .then((transformedContent) => {
-                writeNewFile(transformedContent, absFileName)
-            });
-
+        });
     });
 
 }
@@ -23,13 +22,13 @@ function transformContent(file, transform) {
 
 }
 
-function writeNewFile(transformedContent, file) {
+function writeFile(transformedContent, file) {
 
     fs.writeFile(file, transformedContent, 'utf8', function (err) {
         if (err) {
             return console.log(err);
         }
-        console.log('Writing new file complete');
+        console.log('Writing complete : ' + file);
     });
 
 }

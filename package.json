@@ -16,7 +16,7 @@
   "scripts": {
     "main": "node --harmony index.js",
     "scssizer": "node --harmony index.js",
-    "scssizer-file": "node --harmony index.js /path/to/transform",
+    "scssizer-dir": "node --harmony index.js",
     "scssizer-server": "nodemon --harmony index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
